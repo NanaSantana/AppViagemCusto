@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppViagemCusto.View.Form_Viagem">
+    <ContentPage.Content>
+
+        <ScrollView>
+            <StackLayout BackgroundColor="LightGray">
+
+                <StackLayout BackgroundColor="White" 
+                         Margin="20" Padding="10">
+
+                    <Label Text="Viagem" FontSize="Title" 
+                       FontAttributes="Bold"
+                       HorizontalTextAlignment="Center"/>
+
+                    <Label Text="Origem:" FontAttributes="Bold"/>
+                    <Entry x:Name="txt_Origem"/>
+
+                    <Label Text="Destino:" FontAttributes="Bold"/>
+                    <Entry x:Name="txt_Destino"/>
+
+                    <Label Text="Distancia:" FontAttributes="Bold"/>
+                    <Entry x:Name="txt_Distancia"/>
+
+                </StackLayout>
+
+                <StackLayout BackgroundColor="White" 
+                         Margin="20" Padding="10">
+                    
+                    <Label Text="Custo" FontSize="Title" 
+                       FontAttributes="Bold"
+                       HorizontalTextAlignment="Center"/>
+
+                    <Label Text="Km/L:" FontAttributes="Bold"/>
+                    <Entry x:Name="txt_Km"/>
+
+                    <Label Text="Preço Combustivel:" FontAttributes="Bold"/>
+                    <Entry x:Name="txt_Combustivel"/>
+
+                </StackLayout>
+                
+                
+            </StackLayout>
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>
