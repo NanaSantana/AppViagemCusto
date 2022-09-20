@@ -16,5 +16,21 @@ namespace AppViagemCusto.View
         {
             InitializeComponent();
         }
+
+        private void ToolbarItem_Pedagio(object sender, EventArgs e)
+        {
+            try
+            {
+                Navigation.PushAsync(new Lista_Viagem());
+            } catch (Exception ex)
+            {
+                DisplayAlert("Ops", ex.Message, "ok");
+            }
+        }
+
+        private void ToolbarItem_Somar(object sender, EventArgs e)
+        {
+
+        }
     }
 }

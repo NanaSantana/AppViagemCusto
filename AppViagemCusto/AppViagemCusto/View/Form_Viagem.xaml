@@ -1,7 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppViagemCusto.View.Form_Viagem">
+             x:Class="AppViagemCusto.View.Form_Viagem"
+             Title="Dados da Viagem">
+    
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Pedágios" Clicked="ToolbarItem_Pedagio"/>
+        <ToolbarItem Text="Somar" Clicked="ToolbarItem_Somar"/>
+    </ContentPage.ToolbarItems>
+
+    
     <ContentPage.Content>
 
         <ScrollView>
